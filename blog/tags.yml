@@ -1,19 +1,12 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
+blog:
+release:
+  description: "Blog posts about Docusaurus' new releases"
+javascript:
+i18n:
+beta:
 docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+portfolio:
+camp:
+hexschool:
+12-weeks-plan:
+year:
