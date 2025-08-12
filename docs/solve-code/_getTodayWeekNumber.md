@@ -2,7 +2,6 @@
 title: "取得今天日期在今年是第幾週"
 authors: [clove]
 tags: [JavaScript, solving]
-unlisted: true
 ---
 :::note
 為個人思考的思緒紀錄，可能有更優解法，歡迎指教討論共好

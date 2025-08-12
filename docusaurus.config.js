@@ -50,13 +50,15 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          showLastUpdateTime: false,
           // path: 'docs',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        exclude: ['**/solving-code/**', '**/_*.{js,jsx,ts,tsx,md,mdx}'],
         },
         blog: {
           showReadingTime: true,
@@ -66,8 +68,8 @@ const config = {
           // },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           // onInlineTags: 'warn',
           // onInlineAuthors: 'warn',

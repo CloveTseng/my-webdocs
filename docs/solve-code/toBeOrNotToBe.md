@@ -1,0 +1,47 @@
+---
+title: "2704. To Be Or Not To Be"
+authors: [clove]
+tags: [javascript, solving, easy]
+---
+
+:::note
+為個人思考的思緒紀錄，可能有更優解法，歡迎指教討論共好
+:::
+:::tip[Topic]
+[30 Days of JavaScript](https://leetcode.com/problems/to-be-or-not-to-be/description/?envType=study-plan-v2&envId=30-days-of-javascript)
+:::
+
+## 思考問題
+1. 輸入一個值，會跑判斷
+2. 判斷一：toBe
+3. 判斷二：notToBe
+
+## 列出步驟
+1. 跑 toBe: 如果值與 val 相等，回傳 true，否則為 not equal
+2. 跑 notToBe: 如果值與 val 不相等，回傳 true ，否則回傳 true
+
+## 寫 pseudocode
+1. toBe: if val === toBe(val) exit and "value": true
+2. print "error": "Not Equal"
+3. notToBe: if val not == notToBe(val) exit and "value": true
+4. print "Equal"
+
+# Solve
+```js
+toBe: function(otherVal) {
+  if (val === otherVal) {
+    return true;
+} else {
+  throw new Error("Not Equal")
+}
+}
+```
+
+## 反思與優化
+- 因為完全看不懂題目，所以先看了解答，再試著自己寫一次，一週後再自己寫一次
+- 學習了物件方法呼叫 toBe: (這個常用在測試框架，例 Jest 中)
+- 學習了錯誤語法：throw new Error('') 建立一個自定義新的 Error 物件
+  - throw 自定義錯誤，程式碼會停止
+  - Error 物件，表示錯誤
+- 記得物件與物件間要加『,』；小心不要打錯字
+- 學習了問題拆解並列出步驟的解題模式，練習使用這個模版

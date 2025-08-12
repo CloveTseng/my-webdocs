@@ -46,7 +46,6 @@ h2 {
   transition: background-color var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
 }
-
 .header-github-link:hover::before {
   background-color: var(--ifm-navbar-link-hover-color);
 }
@@ -64,10 +63,14 @@ h2 {
   padding: 0 var(--ifm-pre-padding);
   border-left: 3px solid #ff000080;
 }
-
 [data-theme='dark'] .code-block-highlight-line{
   background-color: rgba(0, 0, 0, 0.3);
 }
 .avatar__photo {
   object-fit: cover;
+}
+
+/* 資料夾不顯示在左側邊欄 */
+.theme-doc-sidebar-item-category.hidden-sidebar-category {
+  display: none;
 }
