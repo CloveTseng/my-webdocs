@@ -1,5 +1,6 @@
 ---
 title: 'options vs composition'
+description: 工作時要追求效率，但學習不是
 authors: [clove]
 tags: [Vue.js]
 ---
@@ -7,6 +8,7 @@ tags: [Vue.js]
 ## Options vs Composition 寫法的差異 (SFC)
 
 ### Options
+
 ```js
 <script>
 export default {
@@ -24,6 +26,7 @@ export default {
 ```
 
 ### Composition
+
 - 要加上 `setup`
 
 ```js
