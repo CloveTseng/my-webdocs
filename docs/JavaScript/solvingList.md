@@ -8,4 +8,9 @@ tags: [JavaScript, solving]
 :::
 
 <!-- - [取得今天日期在今年是第幾週](../solving-code/getTodayWeekNumber.md) -->
-- [2704. To Be Or Not To Be](../solve-code/toBeOrNotToBe.md)
+- [2704.To Be Or Not To Be](../solve-code/01.toBeOrNotToBe.md)
+- [2665.Counter II](../solve-code/02.CounteII.md)
+- [2635.Apply Transform Over Each Element in Array](../solve-code/03.applyTransformOverEachElementInArray.md)
+- [2634.Filter Elements from Array](../solve-code/04.filterElementsFromArray.md)
+- [2626.Array Reduce Transformation](../solve-code/05.arrayReduceTransformation.md)
+- [2629.Function Composition](../solve-code/06.functionComposition.md)

@@ -4,17 +4,20 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'React',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <ul>
+        <li>使用 **Vite** + React 開發 SPA 網站經驗</li>
+        <li>運用 **Hook**，掌握元件資料流與拆分元件</li>
+        <li>使用 **React Router** 建構路由</li>
+        <li>使用 React Hook Form 製作表單及驗證功能</li>
+        <li>使用 **Redux** 進行複雜狀態管理</li>
+      </ul>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'JavaScript',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -41,7 +44,7 @@ function Feature({Svg, title, description}) {
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -51,14 +54,25 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+    <>
+      <div className={ styles.glassContainer }>
+      <section className={ styles.features }>
+        <div className="container">
+          <h2>技能與工具</h2>
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <div className={ styles.glassOverlay }>
+        <div className={ styles.message }>
+          <h2>施工中</h2>
+          <p>此頁面正在努力建置中，敬請期待！</p>
         </div>
       </div>
-    </section>
+      </div>
+    </>
   );
 }
