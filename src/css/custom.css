@@ -7,27 +7,43 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  font-family: "Google Sans Code", "Noto Sans TC", monospace;
-  --ifm-color-primary: #005ca3;
+  font-family: 'Google Sans Code', 'Noto Sans TC', monospace;
+  /* --ifm-color-primary: #005ca3;
   --ifm-color-primary-dark: #005393;
   --ifm-color-primary-darker: #004e8b;
   --ifm-color-primary-darkest: #004072;
   --ifm-color-primary-light: #0065b3;
   --ifm-color-primary-lighter: #006abb;
-  --ifm-color-primary-lightest: #0078d4;
+  --ifm-color-primary-lightest: #0078d4; */
+  --ifm-color-primary: #6b4f3c;
+  --ifm-color-primary-dark: #604736;
+  --ifm-color-primary-darker: #5b4333;
+  --ifm-color-primary-darkest: #4b372a;
+  --ifm-color-primary-light: #765742;
+  --ifm-color-primary-lighter: #7b5b45;
+  --ifm-color-primary-lightest: #8b674e;
+  --ifm-background-color: #fffbf5;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #52b4ff;
+  /* --ifm-color-primary: #52b4ff;
   --ifm-color-primary-dark: #30a5ff;
   --ifm-color-primary-darker: #1f9eff;
   --ifm-color-primary-darkest: #0086ec;
   --ifm-color-primary-light: #74c3ff;
   --ifm-color-primary-lighter: #85caff;
-  --ifm-color-primary-lightest: #b7e0ff;
+  --ifm-color-primary-lightest: #b7e0ff; */
+  --ifm-color-primary: #fffbf5;
+  --ifm-color-primary-dark: #ffe7c3;
+  --ifm-color-primary-darker: #ffddaa;
+  --ifm-color-primary-darkest: #ffbf5f;
+  --ifm-color-primary-light: #f7f5f0;
+  --ifm-color-primary-lighter: #f7f5f0;
+  --ifm-color-primary-lightest: #f7f5f0;
+  --ifm-background-color: #191914;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 h1 {
@@ -54,7 +70,7 @@ h2 {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-  border-left: 3px solid 	#00BB00;
+  border-left: 3px solid #00bb00;
 }
 .code-block-error-line {
   background-color: #ff000020;
@@ -63,8 +79,36 @@ h2 {
   padding: 0 var(--ifm-pre-padding);
   border-left: 3px solid #ff000080;
 }
-[data-theme='dark'] .code-block-highlight-line{
+[data-theme='dark'] .code-block-highlight-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+code {
+  background-color: #f7f5f0;
+  border: 1px solid rgba(139, 103, 78, 0.5);
+}
+[data-theme='dark'] code {
+  background-color: var(--prism-background-color);
+  border: 1px solid rgba(139, 103, 78, 0.5);
+}
+.table-of-contents__link:hover,
+.table-of-contents__link:hover code,
+.table-of-contents__link--active,
+.table-of-contents__link--active code {
+  font-weight: bold;
+}
+.navbar {
+  background-color: var(--ifm-background-color);
+}
+[data-theme='dark'] .navbar {
+  background-color: var(--ifm-navbar-background-color);
+}
+.footer {
+  border-top: 1px solid #dadde1;
+  background-color: #fffbf5;
+}
+[data-theme='dark'] .footer {
+  border-top: 1px solid #dadde1;
+  background-color: var(--ifm-background-color);
 }
 .avatar__photo {
   object-fit: cover;

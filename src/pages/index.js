@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="A developer's portfolio and tech log. Exploring code, design, and everything in between.">
+      description="前端開發者的作品集與技術隨筆，記錄在程式與設計領域的探索與思考。A developer's portfolio and tech log. Exploring code, design, and everything in between.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
