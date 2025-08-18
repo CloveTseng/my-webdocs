@@ -5,13 +5,11 @@ tags: [JavaScript]
 ---
 
 :::tip
-這裡匯總常用處理陣列的方法
+這裡匯總個人常用處理陣列的方法
 :::
 :::note
 不定期更新中
 :::
-
-- [.sort()](./sort.md)
 
 陣列
 
@@ -40,7 +38,12 @@ const arrayData = [
 ];
 ```
 
-## `array.push()`
+## `.sort()` 
+| 將陣列進行排序
+
+- [.sort()](./sort.md)
+
+## `.push()`
 
 | 在陣列的最後一筆加上資料
 
