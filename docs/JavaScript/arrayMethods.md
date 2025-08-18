@@ -162,3 +162,23 @@ Result
 ```
 
 ---
+## `.map()`
+
+| 跑迴圈，不修改原始資料而是產生新陣列
+
+- 寫 React 超常使用
+- 很常用來運算後產生新陣列
+- 列出數量大於 5 的
+
+```js
+const newData = arrayData.map((item) => {
+  return item.count > 5;
+})
+console.log(newData);
+```
+
+Result
+
+```js
+[false,true,true,false]
+```

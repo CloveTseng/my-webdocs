@@ -8,6 +8,7 @@
 /* You can override the default Infima variables here. */
 :root {
   font-family: 'Google Sans Code', 'Noto Sans TC', monospace;
+  font-size: 16px;
   /* --ifm-color-primary: #005ca3;
   --ifm-color-primary-dark: #005393;
   --ifm-color-primary-darker: #004e8b;
@@ -46,12 +47,7 @@
   --ifm-background-color: #191914;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-h1 {
-  color: var(--ifm-color-primary-darkest);
-}
-h2 {
-  color: var(--ifm-color-primary-dark);
-}
+
 .header-github-link::before {
   content: '';
   width: 24px;
@@ -70,7 +66,7 @@ h2 {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-  border-left: 3px solid #00bb00;
+  border-left: 3px solid #8db687;
 }
 .code-block-error-line {
   background-color: #ff000020;
@@ -117,4 +113,8 @@ code {
 /* 資料夾不顯示在左側邊欄 */
 .theme-doc-sidebar-item-category.hidden-sidebar-category {
   display: none;
+}
+.py-15 {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
