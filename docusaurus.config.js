@@ -115,6 +115,12 @@ const config = {
           },
         ],
       },
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        }
+      },
       footer: {
         style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} Clove Tseng. All Rights Reserved. Built with Docusaurus.`,

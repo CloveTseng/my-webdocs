@@ -4,7 +4,9 @@ description: 工作時要追求效率，但學習不是
 authors: [clove]
 tags: [Vue.js, JavaScript]
 ---
-
+:::note
+本站 Vue 的撰寫風格都是 Composition API
+:::
 :::info
 練習用 Vue 寫一個 TodoList
 :::
