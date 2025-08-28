@@ -12,6 +12,7 @@ git stash push -m "work in progress"   #先把做一半的東西存起來
 
 ### 情境一：到新分支開發 
 `(已測過，有效 2024.9.11)`
+
 ```bash
 git checkout -b fix/...             # 新建一個分支並切換過去
 # 做完啦，發 PR

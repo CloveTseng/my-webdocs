@@ -10,6 +10,8 @@ tags: [git, github]
 更新完後再繼續開發
 :::
 
+`(已實測，有效 2025.8.28)`
+
 ## 1. 分支：feature/...(正在開發的分支)
 ```bash
 git stash push -m "work in progress"   #先把做一半的東西存起來
