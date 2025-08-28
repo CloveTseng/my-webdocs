@@ -138,7 +138,8 @@ const config = {
             className: 'code-block-error-line',
             line: 'error'
           },
-        ]
+        ],
+        additionalLanguages: ['git','bash'],
       },
       tableOfContents: {
         minHeadingLevel: 2,

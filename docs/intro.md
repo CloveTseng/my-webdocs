@@ -26,3 +26,4 @@ sidebar_position: 1
 - 框架技術： React
 - 文章撰寫： Markdown
 - 版本控制： GitHub
+- 網站部署托管： Vercel
