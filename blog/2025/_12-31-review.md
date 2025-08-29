@@ -24,6 +24,9 @@ sequenceDiagram
     Note right of 2025: 06/16 - 7/16 <br> 接案 - 金融網站開發
     Note right of 2025: 07/06 - 09/27 <br> 第三屆 12 週計劃 - 加入籌備組
     Note right of 2025: 07 <br> 學習使用 Next.js 及 TailwindCSS 開發
+    Note right of 2025: 07/30 - 08/27 <br> Vue 3 新手營
+    Note right of 2025: 08/12 - 09/21 <br> AAPDx六角 研發營
+
 
 ```
 <!-- 12週計劃到時候刪掉 -->
