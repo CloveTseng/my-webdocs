@@ -56,7 +56,8 @@ const addItem = () => {
 
 //next-line-start
 const removeItem = (id) => {
-
+  const index = itemsData.value.findIndex((item) => item.id === id);
+  itemsData.value.splice(index, 1);
 }
 //next-line-end
 </script>
