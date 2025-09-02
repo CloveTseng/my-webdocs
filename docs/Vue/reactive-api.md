@@ -21,6 +21,30 @@ tags: [Vue.js, JavaScript]
 
 > 看這裡 [`ref()`的每日任務練習](../vue-daily/10.methods.md)
 
+### `shallowRef()`
+- 漸層響應式，只監控 `.value` 本身，不管裡面資料變動
+- 適合處理大型資料結構，只會替換整個物件，不會頻繁修改內部屬性時使用
+```jsx
+<script setup>
+  const shallowRefData = shallowRef({
+    name: 小明,
+    age: 23
+  })
+
+  function replaceRefObject() {
+    shallowRefData.value = {
+      name: 小華,
+      age: 30
+    }
+  }
+  function modifyShallowRefProperty() {
+    shallowRefData.value.age++
+  }
+</script>
+```
+- 執行替換整個物件的時候會重新渲染
+- 而只是更新資料就會沒有反應，雖然抓 `console` 的時候還是會看到 age 增加，但不會觸發更新渲染
+
 ### `reactive()`
 - 用來處理物件或陣列相對複雜的資料 (只能用於物件或陣列)
 - 可以直接存取物件的屬性來修改值，不需要使用 `.value`
