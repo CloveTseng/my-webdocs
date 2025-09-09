@@ -114,3 +114,66 @@ src/
 :::note
 [StackBlitz](https://stackblitz.com/edit/vitejs-vite-rxjn4oye?file=README.md)
 :::
+
+## 教助反饋
+1. 在元件拆分的結構中，建議將細部資料的拆解統一放在其 `Component` 中操作，不需要在 `App.vue` 中做處理，可以將資料直接放各元件中，再由各元件做各資料類別的呈現處理
+  ```js title="App(原本).vue"
+  <ProductLists
+    :id="earphone.id"
+    :title="earphone.title"
+    :description="earphone.description"
+    :price="earphone.price"
+    :imgUrl="earphone.imgUrl"
+    @add-to-cart="handleAddToCart"
+  />
+  ```
+  ```js title="App(優化版).vue"
+  <ProductLists
+    :product="earphone"
+    @add-to-cart="handleAddToCart"
+  />
+  ```
+接著 `ProductLists.vue` 就要修改成以下：
+  ```js title="ProductLists(原本).vue"
+  const props = defineProps({
+    id: Number,
+    title: String,
+    description: String,
+    price: Number,
+    imgUrl: String,
+  });
+  ```
+  - 以及 `template` 的地方也要修改
+  ```js title="ProductLists(優化版).vue"
+  <script setup>
+    {/* ...略 */}
+  const props = defineProps({
+    //next-line-start
+    product: {
+      type: Object,
+      required: true
+    }
+    //next-line-end
+  });
+  {/* ...略 */}
+  </script>
+  <template>
+    //next-line
+    <h5 class="card-title">{{ product.title }}</h5>
+  </template>
+  ```
+2. 商品的圖片建議加上 `alt` 敘述，記得使用 `v-bind:alt` 做綁定
+3. 同學少了總金額的金額的計算可以使用，提醒同學可以使用 `computed` 搭配 `reduce()` 進行累加。
+```jsx
+const totalPrice = computed(() => {
+  return cartData.value.reduce(
+    (pre, item) => pre + item.price * (item.qty || 1),
+    0
+  );
+});
+```
+4. 命名調整：
+  - `AlertToast.vue` 建議改成 `Toast.vue`
+  - `toast` (state) 建議改成 `toastState`
+  - `showToast` (function) 改成 `pushToast`
+5. 可以試試看使用陣列管理 message，讓通知訊息有堆疊的效果

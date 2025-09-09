@@ -40,3 +40,6 @@ const titleClass = ref('title')
   <h1>Make me red</h1> <!-- add dynamic class binding here -->
 </template>
 ```
+:::note
+回到[Vue3 必學知識點](/docs/Vue-base/intro)列表
+:::

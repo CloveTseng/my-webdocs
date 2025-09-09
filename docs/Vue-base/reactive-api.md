@@ -95,3 +95,6 @@ tags: [Vue.js, JavaScript]
 - 需要一個新的值，由現有的資料來產生，用 `computed()`
 - 資料變動後，觸發特定動作，用 `watch()`
 :::
+:::note
+回到[Vue3 必學知識點](/docs/Vue-base/intro)列表
+:::
