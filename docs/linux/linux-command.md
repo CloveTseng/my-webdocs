@@ -54,6 +54,11 @@ tags: [linux, wsl, ubuntu]
 	```bash
 	wsl --unregister Ubuntu-24.04
 	```
+- `btop` | 互動式系統資源監控
+	- `sudo apt install btop` | 安裝
+	- `h` | 顯示說明
+	- `m` | 設定
+	- `q` | 離開
 
 ### 快捷鍵
 - `ctrl + r` | 快速搜尋歷史命令

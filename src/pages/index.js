@@ -16,13 +16,8 @@ function HomepageHeader() {
       <div className={ clsx('container', styles.itemsCenter) }>
         <div>
           <h3 className='hero__subtitle'>Hi, 我是 Clove</h3>
-          <p className="hero__subtitle">一位前端工程師，主要使用 <span className={styles.bgBlack}>Vue.js</span> 進行開發，<br/>並且搭配 GitHub、Vite 等工具開發 SPA 網站經驗
+          <p className="hero__subtitle">一位前端工程師，專注於 <span className={styles.bgBlack}>Vue.js</span> 開發技術，<br/>並且搭配 GitHub、Vite 等工具開發網站經驗
             </p>
-          {/* <ul className={ styles.list }>
-            <li>目前也持續加強 Nuxt.js 與 Tailwind CSS，強化元件化設計與 SSR (伺服器渲染) 開發能力。</li>
-            <li>使用 JSON-server 模擬 RESTful API 串接經驗，並使用 Apidog 等 API 開發工具來進行測試及產出 API 文件供團隊使用</li>
-            <li>在團隊協作中，我熟悉使用 Git 進行版本控制，並在專案中運用 PR Template 促進團隊效率進行程式碼審查與討論，同時也使用 Notion 來共編技術文件，能快速融入團隊並一同創造成果</li>
-          </ul> */}
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
