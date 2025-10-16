@@ -1,18 +1,18 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import LinkCard from '../pages/LinkCard';
 
 const FeatureList = [
   {
-    title: 'React',
+    title: 'Vue3',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <ul>
-        <li>使用 **Vite** + React 開發 SPA 網站經驗</li>
-        <li>運用 **Hook**，掌握元件資料流與拆分元件</li>
-        <li>使用 **React Router** 建構路由</li>
-        <li>使用 React Hook Form 製作表單及驗證功能</li>
-        <li>使用 **Redux** 進行複雜狀態管理</li>
+        <li>使用 Nuxt.js 開發 SSR 網站經驗 </li>
+        <li>能運用 Composition API 掌握元件資料流與拆分</li>
+        <li>使用 Vue Router 建構路由</li>
+        <li>使用 Pinia 進行全域狀態管理</li>
       </ul>
     ),
   },
@@ -20,32 +20,46 @@ const FeatureList = [
     title: 'JavaScript',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <ul>
+        <li> 熟悉基礎 JavaScript 6 語法 </li>
+        <li>ESLint 管理程式碼風格</li>
+        <li>熟悉 AJAX / JSON，使用 Axios 串接 RESTful API 能力</li>
+        <li>使用 JSON server 模擬 RESTful API 經驗</li>
+      </ul>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'HTML5 / CSS3',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <ul>
+        <li> 熟悉基礎 JavaScript 6 語法 </li>
+        <li>ESLint 管理程式碼風格</li>
+        <li>熟悉 AJAX / JSON，使用 Axios 串接 RESTful API 能力</li>
+        <li>使用 JSON server 模擬 RESTful API 經驗</li>
+      </ul>
+    ),
+  },
+  {
+    title: '其他',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <ul>
+        <li> 具備使用 Git / GitHub 進行版本控制與團隊協作經驗 </li>
+        <li> 認識 Figma 設計工具， 懂得查看設計文件，與設計師無障礙溝通 </li>
+        <li> 使用 Chart.js 處理圖表 </li>
+      </ul>
     ),
   },
 ];
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
+        <Heading as="h3" className={styles.bgBlack}>{title}</Heading>
         <p>{description}</p>
       </div>
     </div>
@@ -55,10 +69,9 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <>
-      <div className={ styles.glassContainer }>
       <section className={ styles.features }>
         <div className="container">
-          <h2>技能與工具</h2>
+          <h2>使用技術</h2>
           <div className="row">
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />
@@ -66,13 +79,18 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </section>
-      <div className={ styles.glassOverlay }>
+      {/* <div className={ styles.glassOverlay }>
         <div className={ styles.message }>
           <h2>施工中</h2>
           <p>此頁面正在努力建置中，敬請期待！</p>
         </div>
-      </div>
-      </div>
+      </div> */}
+      <section className={ styles.features }>
+        <div className="container">
+          <h2>專案</h2>
+          <LinkCard />
+        </div>
+      </section>
     </>
   );
 }

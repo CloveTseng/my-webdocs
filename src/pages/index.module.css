@@ -3,13 +3,13 @@
  * and scoped locally.
  */
 .hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .bgBlack {
   background-color: #1c1e21;
   color: #f3f3f4;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 2px 4px;
 }
 .fsBanner {
   font-size: 150px;
@@ -51,7 +51,7 @@
 }
 @media screen and (max-width: 768px) {
   .hero {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
   .heroBanner {
     padding: 2rem;

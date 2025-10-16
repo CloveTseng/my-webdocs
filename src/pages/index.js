@@ -4,14 +4,12 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import HomepageNews from '../components/HomepageNews';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx( styles.heroBanner, styles.hero)}>
+    <header className={ clsx(styles.heroBanner, styles.hero) }>
       <h1 className={ styles.fsBanner }><span className={styles.bgBlack}>CLOVE</span> TSENG</h1>
       <div className={ clsx('container', styles.itemsCenter) }>
         <div>
@@ -39,7 +37,7 @@ export default function Home() {
       description="前端開發者的作品集與技術隨筆，記錄在程式與設計領域的探索與思考。A developer's portfolio and tech log. Exploring code, design, and everything in between.">
       <HomepageHeader />
       <main>
-        <HomepageNews />
+        {/* <HomepageNews /> */}
         <HomepageFeatures />
       </main>
     </Layout>
