@@ -106,6 +106,7 @@ code {
 .footer {
   border-top: 1px solid #dadde1;
   background-color: var(--ifm-background-color);
+  margin-top: 40px;
 }
 [data-theme='dark'] .footer {
   border-top: 1px solid #dadde1;
