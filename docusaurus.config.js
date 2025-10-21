@@ -88,12 +88,12 @@ const config = {
   themeConfig:
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.jpg',
       navbar: {
         title: 'Clove Crafted-dev',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/sprout.png',
+          src: 'img/socialcard-removebg.png',
         },
         items: [
           {

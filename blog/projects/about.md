@@ -23,7 +23,7 @@ tags: [ blog ]
 - RESTful API
 - 基礎 SQL 指令
 
-## 專案 <a href="https://clovetseng.dev/index#專案"> 專案 </a>
+## <a href="https://clovetseng.dev/#專案"> 專案 </a>
 ## 相關工作經歷
 
 <span style={{'font-size':'14px'}}>`2025/08 - 2025/10`</span>
