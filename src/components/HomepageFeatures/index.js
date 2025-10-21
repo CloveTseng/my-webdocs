@@ -80,12 +80,6 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </section>
-      {/* <div className={ styles.glassOverlay }>
-        <div className={ styles.message }>
-          <h2>施工中</h2>
-          <p>此頁面正在努力建置中，敬請期待！</p>
-        </div>
-      </div> */}
       <section className={ styles.features }>
         <div className="container">
           <h2>專案</h2>

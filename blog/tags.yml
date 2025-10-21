@@ -1,7 +1,6 @@
 blog:
 release:
   description: "Blog posts about Docusaurus' new releases"
-javascript:
 i18n:
 beta:
 docusaurus:
@@ -23,5 +22,7 @@ ubuntu:
 github:
 git:
 
+html:
+javascript:
 sql:
 postgresql:
