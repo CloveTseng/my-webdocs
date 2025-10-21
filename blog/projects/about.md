@@ -11,8 +11,11 @@ tags: [ blog ]
 <!-- truncate -->
 
 ## 技能列表
-[![roadmap.sh](https://roadmap.sh/card/wide/66548618d6b907c7f7fc0944?variant=dark&roadmaps=vue%2Cfrontend%2Cjavascript)](https://roadmap.sh)
 
+核心技能：
+<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/wide/66548618d6b907c7f7fc0944?variant=dark&roadmaps=vue%2Cjavascript%2Ccss%2Chtml" alt="roadmap.sh" width="90%"/></a>
+
+<br/><br/>
 其他技能：
 - TailwindCSS
 - Bootstrap
@@ -20,6 +23,7 @@ tags: [ blog ]
 - RESTful API
 - 基礎 SQL 指令
 
+## 專案 <a href="https://clovetseng.dev/index#專案"> 專案 </a>
 ## 相關工作經歷
 
 <span style={{'font-size':'14px'}}>`2025/08 - 2025/10`</span>
@@ -50,12 +54,12 @@ tags: [ blog ]
 <span style={{'font-size':'14px'}}>`2023/10 - 2023/12`</span>
 
 #### 基礎人力資源管理師認證 - 中華人力資源管理協會
-人資（HR）八大功能（選、育、用、留、考、離）的完整理論基礎，完成專業培訓課程並通過認證筆試測驗，了解人資基礎職掌
+人資（HR）選、育、用、留、考、離的完整理論基礎，完成專業培訓課程並通過認證筆試測驗，了解人資基礎職掌
 
 <span style={{'font-size':'14px'}}>`2006/09 - 2010/06`</span>
 
 #### 食品科學系 - 元培醫事科技大學
-大學畢業於食品科學系，專精於食品研發、品質檢驗及衛生安全管理
+大學畢業於食品科學系，熟悉食品研發、品質檢驗及衛生安全管理
 
 <span style={{'font-size':'14px'}}>`2003/09 - 2006/06`</span>
 
