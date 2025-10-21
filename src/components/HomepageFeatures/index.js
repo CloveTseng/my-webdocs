@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import LinkCard from '../pages/LinkCard';
+import CollSwiper from '../pages/CollSwiper';
 
 const FeatureList = [
   {
@@ -22,9 +23,9 @@ const FeatureList = [
     description: (
       <ul>
         <li> 熟悉基礎 JavaScript 6 語法 </li>
-        <li>ESLint 管理程式碼風格</li>
-        <li>熟悉 AJAX / JSON，使用 Axios 串接 RESTful API 能力</li>
-        <li>使用 JSON server 模擬 RESTful API 經驗</li>
+        <li> ESLint 管理程式碼風格 </li>
+        <li> 熟悉 AJAX / JSON，使用 Axios 串接 RESTful API 能力 </li>
+        <li> 使用 JSON server 模擬 RESTful API 經驗 </li>
       </ul>
     ),
   },
@@ -33,10 +34,10 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <ul>
-        <li> 熟悉基礎 JavaScript 6 語法 </li>
-        <li>ESLint 管理程式碼風格</li>
-        <li>熟悉 AJAX / JSON，使用 Axios 串接 RESTful API 能力</li>
-        <li>使用 JSON server 模擬 RESTful API 經驗</li>
+        <li> 具備 RWD 響應式開發經驗 </li>
+        <li> 熟悉 TailwindCSS 開發元件化樣式 </li>
+        <li> 熟悉 OOCSS 設計模式將容器與內容分離 </li>
+        <li> 熟悉 Sass (SCSS 語法)，利用 Mixin 減少重複程式碼 </li>
       </ul>
     ),
   },
@@ -89,6 +90,12 @@ export default function HomepageFeatures() {
         <div className="container">
           <h2>專案</h2>
           <LinkCard />
+        </div>
+      </section>
+      <section className={ styles.features }>
+        <div className="container">
+          <h2>合作與反饋</h2>
+          <CollSwiper />
         </div>
       </section>
     </>

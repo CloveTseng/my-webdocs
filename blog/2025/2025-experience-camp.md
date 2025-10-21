@@ -1,5 +1,5 @@
 ---
-title: "2025 30天軟體工程師體驗營"
+title: "30 天軟體工程師體驗營"
 authors: [clove]
 tags: [camp, hexschool]
 ---

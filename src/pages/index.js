@@ -15,13 +15,23 @@ function HomepageHeader() {
         <div>
           <h3 className='hero__subtitle'>Hi, 我是 Clove</h3>
           <p className="hero__subtitle">一位前端工程師，專注於 <span className={styles.bgBlack}>Vue.js</span> 開發技術，<br/>並且搭配 GitHub、Vite 等工具開發網站經驗
-            </p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              看筆記
-            </Link>
+          </p>
+          <div className={ styles.flex }>
+            <div className={ styles.buttons }>
+              <Link
+                className={ clsx('button', 'button--lg', styles.border) }
+                to="/blog/projects/about">
+                關於我
+              </Link>
+            </div>
+            <div className={ styles.buttons }>
+              <Link
+                className="button button--secondary button--lg"
+                to="/docs/intro">
+                看筆記
+              </Link>
+            </div>
+            
           </div>
         </div>
       </div>

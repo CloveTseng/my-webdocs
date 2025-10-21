@@ -1,5 +1,5 @@
 ---
-title: "2025 AAPDx六角 研發營"
+title: "AAPD x 六角 研發營"
 authors: [clove]
 tags: [camp, hexschool]
 ---

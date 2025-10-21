@@ -22,3 +22,6 @@ ubuntu:
 
 github:
 git:
+
+sql:
+postgresql:

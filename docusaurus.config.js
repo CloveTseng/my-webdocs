@@ -62,6 +62,8 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           // feedOptions: {
           //   type: null,
           //   // xslt: true,

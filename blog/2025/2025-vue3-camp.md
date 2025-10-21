@@ -1,5 +1,5 @@
 ---
-title: "2025 Vue3 新手營"
+title: "Vue3 新手營"
 authors: [clove]
 tags: [camp, hexschool]
 ---
