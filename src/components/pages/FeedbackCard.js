@@ -6,12 +6,12 @@ export default function FeedbackCard({ img, from, content, point}) {
       <div className={ styles.feedbackCard }>
         <div className={ clsx(styles.feedbackContent, styles.feedbackBody) }>
           <img src={img} className={ styles.avatarImg } alt="avatar" />
-          <h5>{ content }</h5>
+          <h5 className={ styles.text }>{ content }</h5>
         </div>
         <div className={ styles.feedbackContent }>
           <p className={ styles.feedbackPoint }>{ point }</p>
           <p className={ styles.feedbackFrom }>{ from }</p>
-          </div>
+        </div>
         </div>
     </>
   )

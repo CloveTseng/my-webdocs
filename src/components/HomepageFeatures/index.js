@@ -3,11 +3,13 @@ import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import LinkCard from '../pages/LinkCard';
 import CollSwiper from '../pages/CollSwiper';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const FeatureList = [
   {
     title: 'Vue3',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <ul>
         <li>使用 Nuxt.js 開發 SSR 網站經驗 </li>
@@ -19,7 +21,6 @@ const FeatureList = [
   },
   {
     title: 'JavaScript',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <ul>
         <li> 熟悉基礎 JavaScript 6 語法 </li>
@@ -31,7 +32,6 @@ const FeatureList = [
   },
   {
     title: 'HTML5 / CSS3',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <ul>
         <li> 具備 RWD 響應式開發經驗 </li>
@@ -43,7 +43,6 @@ const FeatureList = [
   },
   {
     title: '其他',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <ul>
         <li> 具備使用 Git / GitHub 進行版本控制與團隊協作經驗 </li>
@@ -54,9 +53,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description }) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx('col col--6')} data-aos="fade-up">
       <div className="text--center">
       </div>
       <div className="padding-horiz--md">
@@ -68,6 +67,9 @@ function Feature({Svg, title, description}) {
 }
 
 export default function HomepageFeatures() {
+  useEffect(() => {
+    Aos.init();
+  },[])
   return (
     <>
       <section className={ styles.features }>

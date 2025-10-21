@@ -24,6 +24,8 @@ tags: [ blog ]
 - 基礎 SQL 指令
 
 ## <a href="https://clovetseng.dev/#專案"> 專案 </a>
+<span> 👆🏻 點這裡看專案</span>
+
 ## 相關工作經歷
 
 <span style={{'font-size':'14px'}}>`2025/08 - 2025/10`</span>

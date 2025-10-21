@@ -75,10 +75,11 @@
   box-shadow: 8px 2px 10px #d4d4d4;
   padding: 16px 16px 0 16px;
   min-height: 200px;
+  background: linear-gradient(158deg, #fff 50%, #f5f5f5 50%);
 }
 .feedbackContent {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 20% 80%;
 }
 .feedbackBody {
   flex-grow: 1;
@@ -88,11 +89,12 @@
   width: 50px;
   object-fit: cover;
 }
-/* .feedbackPoint {
-  margin-bottom: 16px;
-} */
 .feedbackFrom {
   text-align: end;
   margin-bottom: 16px;
   color: #a3a3a3;
+}
+.text {
+  text-align: justify;
+  line-height: 1.5;
 }

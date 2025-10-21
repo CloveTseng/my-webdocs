@@ -24,6 +24,7 @@ sidebar_position: 1
 整個網站主要是使用 Docusaurus v3.8.1 來產生，
 
 - 框架技術： React
+- 網站特效： Swiper、AOS
 - 文章撰寫： Markdown
 - 版本控制： GitHub
 - 網站部署托管： Vercel
