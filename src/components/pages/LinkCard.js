@@ -4,7 +4,7 @@ import Heading from '@theme/Heading';
 const ProjectList = [
   {
     title: 'OFFWORK 健康生活 APP',
-    img: '/img/cover.png',
+    img: '/img/cover.webp',
     link: 'https://clovetseng.dev/blog/projects/offwork',
     github: 'https://github.com/CloveTseng/offwork',
     demo: 'https://offwork.clovetseng.dev/',
@@ -13,7 +13,7 @@ const ProjectList = [
   },
   {
     title: '餘味尋蹤',
-    img: '/img/flavortrail-cover.png',
+    img: '/img/flavortrail-cover.webp',
     link: '',
     github: 'https://github.com/CloveTseng/flavor-trail-react',
     demo: 'https://ariel0508.github.io/flavor-trail-react/',
