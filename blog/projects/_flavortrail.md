@@ -8,22 +8,21 @@ tags: [ side-project ]
 我們希望創建一個平台，讓商家和個人能夠方便地 捐贈或領取多餘的食品，從而促進資源的有效利用，保護環境， 通過合作和參與實現「零食物浪費」的目標，打造更可持續的未來。
 
 <!-- truncate -->
-<img src="/img/static/img/flavortrail-cover.webp" />
+<img src="/img/flavortrail-cover.webp" />
 
 
-後台測試帳號：`flavortrail@gmail.com`
+後台測試帳號：`flavortrail@gmail.com`\
 後台測試密碼：`20250316`
 
 
 ## 相關連結
-### [線上 Demo](https://offwork.clovetseng.dev/)
-### [GitHub repository](https://github.com/CloveTseng/offwork)
+### [線上 Demo](https://ariel0508.github.io/flavor-trail-react/)
+### [GitHub repository](https://github.com/CloveTseng/flavor-trail-react?tab=readme-ov-file)
 
 ---
 
 ## 團隊組成
-- UI/UX 設計: UI/UX 組成員共 6 名
-- 前端開發: 前端組成員共 3 名
+- 前端開發: 前端組成員共 4 名
 
 ---
 
@@ -44,60 +43,20 @@ tags: [ side-project ]
 ---
 
 ## 使用技術關鍵字
-- Vue3 (Composition API)
-- Nuxt.js
-- TailwindCSS
-- GSAP
-- EChats
+- React
+- React Hooks
+- React Router
+- Router Redux
+- Bootstrap
+- Axios
+- JSON server
 - Git
-- Vercel
+- GitHub
 
 ---
 
 ## 個人負責任務
-### 1. 環境建置
-我負責本專案的 `Nuxt.js` 環境建置，負責初始化專案架構、設定 Meta Tags 相關資料，以確保 SEO 友善性。由於 `Nuxt` 的資料夾即路由特性，所以事先規劃並建立好後續開發所需的檔案與資料夾結構。
-
-```ts title="nuxt.config.ts"
-export default defineNuxtConfig({
-  // ...
-  app: {
-    head: {
-      title: "健康生活 OFFWORK APP",
-      htmlAttrs: {
-        lang: "zh-Hant",
-      },
-      meta: [
-        {
-          name: "description",
-          content: `丟掉煩惱，讓腦袋準時下班。用 OFFWORK 啟動你的下班人生。`,
-        },
-        // ...
-      ],
-    },
-  },
-
-  lottie: {
-    componentName: "Lottie",
-    lottieFolder: "/assets/lottie",
-  },
-
-  googleFonts: {
-    families: {
-      "Noto+Sans+TC": [400, 500, 700],
-    },
-  },
-  // ...
-});
-
-```
-### 2. 分析頁面與流程
-
-我負責分析頁面以及相關的流程開發
-<img src="/blog/Slide_12.png" />
-
-並且使用 GSAP 來處理載入時圖表的動畫\
-以及部份使用 ECharts 開發圖表
+### 1. 使用 JSON Server 搭配 Render 模擬 RESTful API
 
 ---
 
