@@ -13,7 +13,7 @@ tags: [ blog ]
 ## 技能列表
 
 核心技能：
-<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/wide/66548618d6b907c7f7fc0944?variant=dark&roadmaps=vue%2Cjavascript%2Ccss%2Chtml" alt="roadmap.sh" width="90%"/></a>
+<a href="https://roadmap.sh"><img src="https://roadmap.sh/card/wide/66548618d6b907c7f7fc0944?variant=dark&roadmaps=vue%2Cjavascript%2Ccss%2Chtml" alt="roadmap.sh" width="90%" /></a>
 
 <br/><br/>
 其他技能：
