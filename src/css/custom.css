@@ -3,13 +3,6 @@
 :root {
   font-family: 'Google Sans Code', 'Noto Sans TC', monospace;
   font-size: 16px;
-  /* --ifm-color-primary: #005ca3;
-  --ifm-color-primary-dark: #005393;
-  --ifm-color-primary-darker: #004e8b;
-  --ifm-color-primary-darkest: #004072;
-  --ifm-color-primary-light: #0065b3;
-  --ifm-color-primary-lighter: #006abb;
-  --ifm-color-primary-lightest: #0078d4; */
   --ifm-color-primary: #444950;
   --ifm-color-primary-dark: #3d4248;
   --ifm-color-primary-darker: #303338;
@@ -25,13 +18,6 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  /* --ifm-color-primary: #52b4ff;
-  --ifm-color-primary-dark: #30a5ff;
-  --ifm-color-primary-darker: #1f9eff;
-  --ifm-color-primary-darkest: #0086ec;
-  --ifm-color-primary-light: #74c3ff;
-  --ifm-color-primary-lighter: #85caff;
-  --ifm-color-primary-lightest: #b7e0ff; */
   --ifm-color-primary: #d2d3d5;
   --ifm-color-primary-dark: #bcbec1;
   --ifm-color-primary-darker: #b1b3b6;
@@ -43,6 +29,22 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-link-color: #30a5ff;
 }
+html {
+  position: relative;
+  background-color: #f7f7f7;
+}
+html::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)"/></svg>');
+  opacity: 0.15;
+}
+
 .header-github-link::before {
   content: '';
   width: 24px;
@@ -73,10 +75,6 @@
 [data-theme='dark'] .code-block-highlight-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
-/* code {
-  background-color: #f7f5f0;
-  border: 1px solid rgba(139, 103, 78, 0.5);
-} */
 code {
   background-color: #f5f5f5;
   border: 1px solid rgba(33, 35, 38, 0.5);

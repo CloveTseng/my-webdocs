@@ -30,7 +30,6 @@ function HomepageHeader() {
                 看筆記
               </Link>
             </div>
-            
           </div>
         </div>
       </div>
