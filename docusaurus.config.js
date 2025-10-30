@@ -104,10 +104,12 @@ const config = {
           },
         ],
       },
-      metadata: {
-        name: 'Clove Crafted-Dev',
-        content: '專業 Vue3/Nuxt.js 前端工程師，擅長 RWD 響應式網站與效能優化'
-      },
+      metadata: [
+        {
+          name: 'Clove Crafted-Dev',
+          content: '專業 Vue3/Nuxt.js 前端工程師，擅長 RWD 響應式網站與效能優化'
+        },
+      ],
       docs: {
         sidebar: {
           autoCollapseCategories: true,
