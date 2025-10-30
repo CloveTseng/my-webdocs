@@ -25,6 +25,6 @@ sidebar_position: 1
 
 - 框架技術： React
 - 網站特效： Swiper、AOS
-- 文章撰寫： Markdown
+- 文章撰寫： Markdown、Mermaid
 - 版本控制： GitHub
 - 網站部署托管： Vercel
