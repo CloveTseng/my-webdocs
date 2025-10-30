@@ -106,7 +106,7 @@ const config = {
       },
       metadata: {
         name: 'Clove Crafted-Dev',
-        content: '你好，我是一位說人話的前端工程師，專注使用 Vue3 (Nuxt.js) 開發技術，擅長'
+        content: '專業 Vue3/Nuxt.js 前端工程師，擅長 RWD 響應式網站與效能優化'
       },
       docs: {
         sidebar: {
@@ -141,6 +141,10 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true
+      },
+      gtag: {
+        trackingID: 'G-HEYHYGD17P',
+        anonymizeIP: true
       }
     }),
   markdown: {
