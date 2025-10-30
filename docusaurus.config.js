@@ -132,7 +132,11 @@ const config = {
             line: 'error'
           },
         ],
-        additionalLanguages: ['git','bash'],
+        additionalLanguages: ['git', 'bash'],
+        gtag: {
+        trackingID: 'G-HEYHYGD17P',
+        anonymizeIP: true
+        }, 
       },
       tableOfContents: {
         minHeadingLevel: 2,
@@ -141,10 +145,6 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true
-      },
-      gtag: {
-        trackingID: 'G-HEYHYGD17P',
-        anonymizeIP: true
       }
     }),
   markdown: {
