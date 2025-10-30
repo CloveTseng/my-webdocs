@@ -81,7 +81,6 @@ const config = {
 
   themeConfig:
     ({
-      // Replace with your project's social card
       image: 'img/social-card.jpg',
       navbar: {
         title: 'Clove Crafted-dev',
@@ -97,11 +96,6 @@ const config = {
             label: '技術筆記',
           },
           {to: '/blog', label: 'Blog', position: 'right'},
-          // {
-          //   href: 'https://firebasestorage.googleapis.com/v0/b/mobaocoffee.appspot.com/o/%E6%9B%BE%E7%B9%AA%E7%92%87_%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB_Resume.pdf?alt=media&token=b20783a2-dc5a-44ca-8fc2-f6478b3f99c9',
-          //   label: 'Resume',
-          //   position: 'right'
-          // },
           {
             href: 'https://github.com/CloveTseng',
             position: 'right',
@@ -109,6 +103,10 @@ const config = {
             'aria-label': 'GitHub repository',
           },
         ],
+      },
+      metadata: {
+        name: 'Clove Crafted-Dev',
+        content: '你好，我是一位說人話的前端工程師，專注使用 Vue3 (Nuxt.js) 開發技術，擅長'
       },
       docs: {
         sidebar: {

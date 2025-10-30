@@ -155,3 +155,7 @@ test.beforeAll(async () => {
 - Playwright Snippets for VSCode 提供大量程式碼片段
 - Playwright Snippets UI for VSCode 快速撰寫腳本
 - Playwright Helpers 管理 CLI 命令與執行
+
+:::info
+更詳細的 API 或其他用法 [playwright 官方文件](https://playwright.dev/docs/intro)
+:::

@@ -53,6 +53,11 @@ tags: [ blog ]
 #### TypeScript 實戰課 - 六角學院
 學習 TS 環境建置、基礎及進階型別設定到 API 實戰，提升程式的可讀性以及安全性
 
+<span style={{'font-size':'14px'}}>`2025/10 - 2025/10`</span>
+
+#### AIxSDD 規格驅動開發  - 多奇教育訓練
+從規格驅動開發流程開始到實作
+
 <span style={{'font-size':'14px'}}>`2025/09 - 2025/09`</span>
 
 #### 實戰 E2E 測試：使用 Playwright 測試框架  - 多奇教育訓練
