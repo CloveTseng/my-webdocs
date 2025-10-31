@@ -110,6 +110,10 @@ const config = {
           hideable: true,
         }
       },
+      gtag: {
+        trackingID: 'G-HEYHYGD17P',
+        anonymizeIP: true
+        }, 
       footer: {
         style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} Clove Tseng. All Rights Reserved. Built with Docusaurus.`,
@@ -129,10 +133,6 @@ const config = {
           },
         ],
         additionalLanguages: ['git', 'bash'],
-        gtag: {
-        trackingID: 'G-HEYHYGD17P',
-        anonymizeIP: true
-        }, 
       },
       tableOfContents: {
         minHeadingLevel: 2,
