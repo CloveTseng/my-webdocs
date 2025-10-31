@@ -71,6 +71,10 @@ const config = {
           // onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+        gtag: {
+          trackingID: 'G-HEYHYGD17P',
+          anonymizeIP: true
+        }, 
         theme: {
           customCss: './src/css/custom.css',
           
@@ -110,10 +114,6 @@ const config = {
           hideable: true,
         }
       },
-      gtag: {
-        trackingID: 'G-HEYHYGD17P',
-        anonymizeIP: true
-        }, 
       footer: {
         style: 'light',
         copyright: `Copyright © ${new Date().getFullYear()} Clove Tseng. All Rights Reserved. Built with Docusaurus.`,
