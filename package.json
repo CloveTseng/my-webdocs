@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.8.1",
-    "@docusaurus/types": "3.8.1"
+    "@docusaurus/types": "3.8.1",
+    "@easyops-cn/docusaurus-search-local": "^0.52.1"
   },
   "browserslist": {
     "production": [

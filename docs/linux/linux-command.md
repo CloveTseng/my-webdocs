@@ -47,7 +47,7 @@ tags: [linux, wsl, ubuntu]
 	- 會跳出一連串的風格設定問題(依喜好選擇即可)
 		- 重新設定風格輸入： `p10k configure` 可以重新設定
 - `vi ~/.zshrc` | 修改設定檔
-	- | 增加 npm run 的縮寫
+	- | 增加 npm run 的縮寫 `alias nr="npm run"`
 
 ### 其他
 - 如果要移除發行版本 (例如 ubuntu-24.04 這版)

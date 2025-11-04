@@ -23,5 +23,11 @@ graph TB
 
 ### 聽起來 SDD 跟 Vibe Coding 好像，差在哪？
 
+
+:::tip
+SDD 是讓你的品質更好，不是讓你更輕鬆
+:::
+
 ## 用什麼工具？
 GitHub Spec Kit
+幫助你走完 SDD 流程

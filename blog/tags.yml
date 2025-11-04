@@ -25,5 +25,6 @@ testing:
 
 html:
 javascript:
+typescript:
 sql:
 postgresql:

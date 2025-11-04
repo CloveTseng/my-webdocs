@@ -100,6 +100,7 @@ const config = {
             label: '技術筆記',
           },
           {to: '/blog', label: 'Blog', position: 'right'},
+          { type: 'search', position: 'right' },
           {
             href: 'https://github.com/CloveTseng',
             position: 'right',
@@ -108,6 +109,7 @@ const config = {
           },
         ],
       },
+      
       docs: {
         sidebar: {
           autoCollapseCategories: true,
@@ -141,12 +143,26 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true
-      }
+      },
     }),
   markdown: {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid','@docusaurus/theme-live-codeblock'],
+  plugins: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        docsRouteBasePath: '/docs',
+        blogRouteBasePath: '/blog',
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        removeDefaultStopWordFilter: false,
+      },
+    ],
+  ],
 };
 
 export default config;
