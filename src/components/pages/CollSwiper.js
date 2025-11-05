@@ -46,8 +46,8 @@ export default function CollSwiper() {
   return (
     <>
       <Swiper
-        slidesPerView={ 2.3 }
-        spaceBetween={ 30 }
+        slidesPerView={ 1.2 }
+        spaceBetween={ 16 }
         className={ styles.swiper }
         modules={ [Autoplay] }
         autoplay={{
@@ -56,6 +56,20 @@ export default function CollSwiper() {
         } }
         loop={ true }
         speed={ 5000 }
+        breakpoints={{
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: 2.3,
+            spaceBetween: 30,
+          },
+        }}
       >
         { feedbackData.map((props, idx) => (
           <SwiperSlide key={ idx }><FeedbackCard {...props} /></SwiperSlide>

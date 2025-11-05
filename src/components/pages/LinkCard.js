@@ -36,8 +36,14 @@ function Card({ img, link, title, description, tags, github, demo, detail}) {
           ))}
         </ul>
         <p>{ description }</p>
-        <Link to={ github }>Github</Link> | <Link to={ demo }>Demo</Link>
-        { detail && (<p className={ styles.textAlign }>點擊卡片查看更多 <span className={ styles.circle } >→</span></p>) }
+        <div className={ styles.cardFooter }>
+          <div>
+            <Link to={ github }>GitHub</Link> | <Link to={ demo }>Demo</Link>
+          </div>
+          { detail && (
+            <p className={ styles.textAlign }>點擊卡片查看更多 <span className={ styles.circle } >→</span></p>
+          )}
+        </div>
       </div>
     </Link>
   );
