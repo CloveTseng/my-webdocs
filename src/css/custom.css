@@ -124,14 +124,12 @@ code {
   width: 300px;
 }
 
-/* 代码块长代码自动折行 */
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-/* 确保代码块内的代码也能折行 */
 pre code {
   white-space: pre-wrap;
   word-wrap: break-word;

@@ -16,8 +16,8 @@
   "dependencies": {
     "@docusaurus/core": "3.8.1",
     "@docusaurus/preset-classic": "3.8.1",
-    "@docusaurus/theme-live-codeblock": "^3.8.1",
-    "@docusaurus/theme-mermaid": "^3.8.1",
+    "@docusaurus/theme-live-codeblock": "3.8.1",
+    "@docusaurus/theme-mermaid": "3.8.1",
     "@mdx-js/react": "^3.0.0",
     "aos": "^2.3.4",
     "clsx": "^2.0.0",
