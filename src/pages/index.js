@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="前端開發者的作品集與技術隨筆，記錄在程式與設計領域的探索與思考。A developer's portfolio and tech log. Exploring code, design, and everything in between."
+      description="分享前端開發的歷程、專案作品與技術筆記，記錄每一次成長與體悟 A space for frontend journeys, creative projects, and insights from the path of learning and building."
     >
       <HomepageHeader />
       <main>
