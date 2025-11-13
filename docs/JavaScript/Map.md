@@ -67,7 +67,7 @@ console.log(myMap);
 | `.keys()` | 取得所有 key | [範例](#keys) |
 | `.values()` | 取得所有 value | [範例](#values) |
 
-<a id="set"></a>
+### set
 
 **`.set(key, value)` - 新增或更新鍵值對**
 ```js
@@ -81,7 +81,7 @@ console.log(myMap);
 // Map(4) { 'name' => 'Alice', 'age' => 25, 1 => 'number key', { id: 1 } => 'object key' }
 ```
 
-<a id="get"></a>
+### get
 
 **`.get(key)` - 取得對應的值**
 ```js
@@ -92,7 +92,7 @@ console.log(myMap.get('name')); // 'Alice'
 console.log(myMap.get('notExist')); // undefined
 ```
 
-<a id="has"></a>
+### has
 
 **`.has(key)` - 檢查 key 是否存在**
 ```js
@@ -103,7 +103,7 @@ console.log(myMap.has('name')); // true
 console.log(myMap.has('age')); // false
 ```
 
-<a id="delete"></a>
+### delete
 
 **`.delete(key)` - 刪除指定的鍵值對**
 ```js
@@ -115,7 +115,7 @@ myMap.delete('name');
 console.log(myMap.has('name')); // false
 ```
 
-<a id="clear"></a>
+### clear
 
 **`.clear()` - 清空所有鍵值對**
 ```js
@@ -127,7 +127,7 @@ myMap.clear();
 console.log(myMap.size); // 0
 ```
 
-<a id="size"></a>
+### size
 
 **`.size` - 取得 Map 的大小**
 ```js
@@ -140,7 +140,7 @@ console.log(myMap.size); // 2
 
 #### 迭代 Map
 
-<a id="foreach"></a>
+### foreach
 
 **遍歷所有鍵值對 - `.forEach()` / `for...of` / `.entries()`**
 
@@ -201,7 +201,7 @@ for (const [key, value] of myMap.entries()) {
 - 效能與 `.entries()` 相同（Map 的預設迭代器就是 entries）
 :::
 
-<a id="keys"></a>
+### keys
 
 **`.keys()` - 取得所有 key**
 ```js
@@ -217,7 +217,7 @@ for (const key of myMap.keys()) {
 // age
 ```
 
-<a id="values"></a>
+### values
 
 **`.values()` - 取得所有 value**
 ```js
