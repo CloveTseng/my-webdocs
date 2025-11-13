@@ -32,6 +32,20 @@
 html {
   position: relative;
   background-color: #f7f7f7;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#__docusaurus {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
 }
 html::before {
   content: '';
@@ -95,10 +109,18 @@ code {
 [data-theme='dark'] .navbar {
   background-color: var(--ifm-navbar-background-color);
 }
+/* 確保主要內容區域可以擴展 */
+#__docusaurus > .main-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .footer {
   border-top: 1px solid #dadde1;
   background-color: var(--ifm-background-color);
-  margin-top: 40px;
+  margin-top: auto;
+  flex-shrink: 0;
 }
 [data-theme='dark'] .footer {
   border-top: 1px solid #dadde1;

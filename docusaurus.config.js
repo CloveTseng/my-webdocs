@@ -27,7 +27,6 @@ const config = {
   // projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -85,7 +84,7 @@ const config = {
 
   themeConfig:
     ({
-      image: 'img/social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         title: 'Clove Crafted-dev',
         logo: {
@@ -147,6 +146,9 @@ const config = {
     }),
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
   themes: ['@docusaurus/theme-mermaid','@docusaurus/theme-live-codeblock'],
   plugins: [
