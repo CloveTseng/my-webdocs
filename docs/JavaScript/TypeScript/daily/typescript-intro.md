@@ -2,7 +2,7 @@
 title: Day 1 - TypeScript 簡介
 description: 2025 TypeScript 實戰課，一天學一點積沙成塔
 tags: [Vue.js, JavaScript]
-image: /blog/ts-daily1.png
+image: https://clovetseng.dev/blog/ts-daily1.png
 ---
 
 > 2025 TypeScript 實戰課，一天學一點積沙成塔
