@@ -7,4 +7,4 @@ tags: [TypeScript]
 since 2025/11/17 ~ 2025/12/12
 :::
 
-- Day 1：
+- Day 1： [TypeScript 簡介](daily/typescript-intro.md)

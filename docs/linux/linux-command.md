@@ -22,7 +22,7 @@ tags: [linux, wsl, ubuntu]
 - `ls` | 列出所有檔案
 - `ls -a` | 列出所有檔案(含隱藏檔)
 - `vi` | 建立一個 vim 文件
-- `cat` | 印出檔案內容
+- `cat` | 合併檔案 `cat file1.txt file2.txt > combined.txt`
 - `pwd` | 印出當前完整路徑
 - `cp` | 複製單一檔案
 - `mv` | 移動或修改檔名(資料夾)
@@ -35,6 +35,7 @@ tags: [linux, wsl, ubuntu]
 - `~/projects/` | 代表某個特定資料夾(projects 是資料夾名稱)
 	- `cp -r /mnt/d/project/xxxproject .` ← 複製專案到當前目錄
 - `rm -rf 資料夾名稱` | 強制刪除資料夾(含內文件及子資料夾)
+- `less` | 閱讀器 (`q` 退出 / `jk` 上下捲動 / `/搜尋的字` enter 可以搜尋)
 
 
 ### 美化類
