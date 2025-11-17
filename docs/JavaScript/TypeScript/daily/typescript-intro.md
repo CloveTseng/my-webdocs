@@ -1,10 +1,11 @@
 ---
 title: Day 1 - TypeScript 簡介
-description: 2025 TypeScript 實戰課，藉由一天學一點積沙成塔
+description: 2025 TypeScript 實戰課，一天學一點積沙成塔
 tags: [Vue.js, JavaScript]
+image: /blog/ts-daily1.png
 ---
 
-> 2025 TypeScript 實戰課，藉由一天學一點積沙成塔
+> 2025 TypeScript 實戰課，一天學一點積沙成塔
 
 :::info Topic
 第一大題：選擇題\
