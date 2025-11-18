@@ -1,5 +1,5 @@
 ---
-title: Day 1 - 原始型別、型別註釋、型別推斷
+title: Day 2 - 原始型別、型別註釋、型別推斷
 description: 2025 TypeScript 實戰課，一天學一點積沙成塔
 tags: [Vue.js, JavaScript]
 image: /blog/ts-daily2.png
