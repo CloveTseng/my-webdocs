@@ -18,7 +18,7 @@ sidebar_position: 1
 - **[JavaScript](./JavaScript/event-loop)**：主要會放 JS Methods 的用法和一些基礎觀念
   - **[TypeScript](./JavaScript/TypeScript/intro)**：TypeScript 相關筆記和每日學習紀錄
 - **[Vue3 必學知識點](./Vue-base/intro)**：學習 Vue3 時一定要了解的知識點及其他延伸
-- **[Git 手冊](./git-notes/01.intro)**：團隊協作常用的 Git 指令和情境解決方案
+- **[Git 手冊](./git-notes/intro)**：團隊協作常用的 Git 指令和情境解決方案
 - **[Linux](./linux/linux-command)**：整理常用的 Linux 指令和知識點
 - **[Playwright](./else/e2e-playwright)**：學習 Playwright 測試框架進行 E2E 測試
 

@@ -18,10 +18,14 @@ tags: [Vue.js, JavaScript]
 
 ## 在 3 階段中我該做什麼？
 | 階段 | 生命週期(Hook) | 說明 | 做什麼？ |
-| ---- | ----------- | ----- | ----- |
+| ------ | ----------- | ----- | ----- |
+| 1. 準備 | 無 | 備料 | 宣告 `ref`, `reactive` |
+| | `<script setup>` | 還在裝潢 | 定義函式(Function) |
+| 2. 出現 | `onMounted` | 正式開幕! | 呼叫 API |
+| | | 客人看到店面了(DOM 存在) | 操作 DOM (綁定 Canvas, Chart.js) |
+| | | | 設定 `setInterval` |
+| 3. 消失 | `onUnmounted` | 撤櫃 | 清除計時器 (`clearInterval`) |
+| | | 清場 | 取消監聽事件 (`removeEventListener`) / 防止記憶體洩漏 |
 
 
 
-:::note
-[codepen](https://codepen.io/CloveTseng1026/pen/jEbGBOQ)
-:::
