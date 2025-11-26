@@ -15,10 +15,10 @@ sidebar_position: 1
 
 你可以透過選單或搜尋來探索不同主題的筆記，例如：
 
-- **[JavaScript](./JavaScript)**：主要會放 JS Methods 的用法和一些基礎觀念
-  - **[TypeScript](./JavaScript/TypeScript)**：TypeScript 相關筆記和每日學習紀錄
-- **[Vue3 必學知識點](./Vue-base)**：學習 Vue3 時一定要了解的知識點及其他延伸
-- **[Linux](./linux)**：整理常用的 Linux 指令和知識點
+- **[JavaScript](/JavaScript/event-loop)**：主要會放 JS Methods 的用法和一些基礎觀念
+  - **[TypeScript](./JavaScript/TypeScript/intro)**：TypeScript 相關筆記和每日學習紀錄
+- **[Vue3 必學知識點](./Vue-base/intro)**：學習 Vue3 時一定要了解的知識點及其他延伸
+- **[Linux](./linux/linux-command)**：整理常用的 Linux 指令和知識點
 
 ## 關於這個網站
 
