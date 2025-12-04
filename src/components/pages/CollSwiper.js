@@ -41,6 +41,12 @@ const feedbackData = [
     content: '每週進度準時交付，有問題也會即時提問，訊息回覆速度很快，讓人很放心～',
     point: '★★★★★'
   },
+  {
+    img: '/img/avatar/Alvie.webp',
+    from: '波利馬資訊科技有限公司 - 執行長',
+    content: '做事細心，軟體專案交辦給她讓人很放心，遇到工作模糊地帶也會主動協助釐清，讓交付品質變得更完善 👍',
+    point: '★★★★★'
+  },
 ]
 export default function CollSwiper() {
   return (
