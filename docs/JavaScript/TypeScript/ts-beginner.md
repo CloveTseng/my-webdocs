@@ -27,7 +27,22 @@ export const cart /* TODO: 陣列包物件的型別定義 > */ = [
 <summary>點擊查看解答</summary>
 
 ```ts
-
+export const plantId: number = 101;
+export const plantName: string = "琴葉榕（Fiddle Leaf Fig）";
+export const isAvailable: boolean = true;
+export const tags: Array<string> = ["大型植栽", "室內明亮散射光"];
+export const plant: {id:number; name:string; price:number} = { id: 101, name: "琴葉榕", price: 2500 };
+type TCardInfo = {
+  sku: string;
+  name: string;
+  qty: number;
+  price: number;
+  potColor?: string;
+}
+export const cart: TCardInfo[] = [
+  { sku: "PLANT-1001", name: "虎尾蘭", qty: 2, price: 480 },
+  { sku: "PLANT-2001", name: "龜背芋", qty: 1, price: 1200, potColor: "白" },
+];
 ```
 </details>
 
@@ -44,7 +59,12 @@ export const catKeyName: string = PlantCategory[/* TODO: 取得 LargePlant 的�
 <summary>點擊查看解答</summary>
 
 ```ts
-
+export enum PlantCategory {
+  LargePlant,
+  MediumPlant,
+  SmallPlant
+}
+export const catKeyName: string = PlantCategory[PlantCategory.LargePlant];
 ```
 </details>
 
@@ -69,7 +89,17 @@ export const snakePlant /* TODO: OnShelfPlant */ = {
 <summary>點擊查看解答</summary>
 
 ```ts
+export type TBasicPlant = {id: number; name: string; price: number };
+export type TStockInfo = {sku: string; quantity: number};
+export type TOnShelfPlant = TBasicPlant & TStockInfo;
 
+export const snakePlant: TOnShelfPlant = {
+  id: 2,
+  name: "虎尾蘭",
+  price: 480,
+  sku: "PLANT-1001",
+  quantity: 42,
+};
 ```
 </details>
 
@@ -94,7 +124,22 @@ export const fiddleLeafFig /* TODO: PlantItem */ = {
 <summary>點擊查看解答</summary>
 
 ```ts
+export interface IPrice { price: number, currency: string}
+export interface IShippable { weightKg: number, shipFrom: string}
 
+export interface IPlantItem extends IPrice, IShippable{
+  id: number,
+  name: string
+}
+
+export const fiddleLeafFig: IPlantItem = {
+  id: 101,
+  name: "琴葉榕",
+  price: 2500,
+  currency: "TWD",
+  weightKg: 8.2,
+  shipFrom: "Taipei",
+};
 ```
 </details>
 
@@ -118,7 +163,16 @@ export const calcTotal /* TODO: CalcTotalFn */ = (items, coupon) => {
 <summary>點擊查看解答</summary>
 
 ```ts
+export type TCartItem = { price: number; qty: number };
+export type TCoupon = { type: "percent" | "cash"; amount: number };
+export type TCalcTotalFn = (items: TCartItem[], coupon?: TCoupon) => number;
 
+export const calcTotal: TCalcTotalFn = (items, coupon) => {
+  const subtotal = items.reduce((sum, it) => sum + it.price * it.qty, 0);
+  if (!coupon) return subtotal; 
+  if (coupon.type === "percent") return Math.max(0, Math.round(subtotal * (1 - coupon.amount / 100)));
+  return Math.max(0, subtotal - coupon.amount);
+};
 ```
 </details>
 
@@ -144,7 +198,18 @@ export const fetchPlants = async () /* TODO */ => {
 <summary>點擊查看解答</summary>
 
 ```ts
+import axios from 'axios';
+import type { AxiosResponse } from 'axios';
+export type TPlantDTO = { 
+  id: number; 
+  title: string; 
+  price: number; 
+  category: string; 
+};
 
+export const fetchPlants = async (): Promise<AxiosResponse<TPlantDTO[]>> => {
+  return axios.get('https://fakestoreapi.com/products');
+}
 ```
 </details>
 
@@ -170,6 +235,28 @@ export function updatePlant(input: /* TODO */ any): /* TODO */ any {
 <summary>點擊查看解答</summary>
 
 ```ts
+export type TPlantBase = { 
+  id: number; 
+  name: string; 
+  price: number; 
+  description?: string 
+  };
+
+export function updatePlant(input: Partial<TPlantBase>): Required<TPlantBase> {
+  const existing: TPlantBase = { 
+    id: 1, 
+    name: "虎尾蘭", 
+    price: 480, 
+    description: "耐陰、淨化空氣" 
+  };
+  const merged = { ...existing, ...input };
+  return {
+    id: merged.id,
+    name: merged.name,
+    price: merged.price,
+    description: merged.description ?? "",
+  };
+}
 
 ```
 </details>
@@ -189,7 +276,11 @@ export const inventory /* TODO */ = {
 <summary>點擊查看解答</summary>
 
 ```ts
-
+export type TInventory = Record<string, number>;
+export const inventory:  TInventory = {
+  "PLANT-1001": 42,
+  "PLANT-2001": 8,
+};
 ```
 </details>
 
@@ -197,7 +288,7 @@ export const inventory /* TODO */ = {
 > 說明：type PlantItem 由第四題定義，請用 Pick/Omit 建立兩個新型別。\
 > 目標：理解 Pick/Omit 的用法與差異。\
 > 需求：
-> 1) CartPlant：只需 id/name/price\
+> 1) CartPlant：只需 id/name/price
 > 2) PublicPlant：移除重量與出貨地
 
 ```ts
@@ -211,7 +302,16 @@ export const publicPlant /* TODO */ = { id: 101, name: "琴葉榕", price: 2500,
 <summary>點擊查看解答</summary>
 
 ```ts
+export type TCartPlant = Pick<IPlantItem, "id" | "name" | "price">;
+export type TPublicPlant = Omit<IPlantItem, "weightKg" | "shipFrom">;
 
+export const cartPlant: TCartPlant = { id: 101, name: "琴葉榕", price: 2500 };
+export const publicPlant: TPublicPlant = { 
+  id: 101, 
+  name: "琴葉榕", 
+  price: 2500, 
+  currency: "TWD" 
+};
 ```
 </details>
 
@@ -219,8 +319,7 @@ export const publicPlant /* TODO */ = { id: 101, name: "琴葉榕", price: 2500,
 > 說明：這是一個後台新增商品的功能，請將以下需求用 TypeScript 實作。\
 > 目標：整合運用前面所學的型別定義技巧。
 
-```ts
-/* 1️⃣ 定義 type Product
+1️⃣ 定義 type Product
     產品資料結構如下：
     - id: 字串
     - title: 字串
@@ -232,34 +331,74 @@ export const publicPlant /* TODO */ = { id: 101, name: "琴葉榕", price: 2500,
     - unit: 字串 
     - imageUrl: 字串
     - imagesUrl: 字串陣列（非必要）
-*/
 
-/*
+
+<details>
+<summary>點擊查看解答</summary>
+
+```ts
+type TProduct = {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  origin_price: number;
+  price: number;
+  is_enabled: boolean;
+  unit: string;
+  imageUrl: string;
+  imagesUrl?: string[];
+}
+```
+</details>
+
+
 2️⃣ 定義 type CreateProduct
 由 Product 衍生，但不包含 id（使用 Omit）
-*/
 
-/*
+<details>
+<summary>點擊查看解答</summary>
+
+```ts
+type TCreateProduct = Omit<TProduct, 'id'>
+```
+</details>
+
+
 3️⃣ 定義 type UpdateProduct
 由 Product 衍生，id, title 必須有，其餘皆可選（使用 Partial 與 Omit）
-*/
 
-/*
+
+<details>
+<summary>點擊查看解答</summary>
+
+```ts
+type TUpdateProduct = Pick<TProduct, 'id' | 'title'> & Partial<Omit<TProduct, 'id' | 'title'>>
+```
+</details>
+
 4️⃣ 實作函式 submitProduct(type, product)
 參數說明：
 - type 僅能是 "create" 或 "update"
 - 若 type === "create"，參數型別應為 CreateProduct
 - 若 type === "update"，參數型別應為 UpdateProduct
 函式回傳字串：
-create → "新增商品成功：${product.title}"
-update → "更新商品成功：${product.id}"
-*/
-```
+create → "新增商品成功：`${product.title}`"
+update → "更新商品成功：`${product.id}`"
+
 <details>
 <summary>點擊查看解答</summary>
 
 ```ts
-
+const submitProduct = (
+  type: 'create' | 'update',
+  product: TCreateProduct | TUpdateProduct
+): string => {
+  if (type === 'create') {
+    return `新增商品成功：${(product as TCreateProduct).title}`;
+  }
+  return `更新商品成功：${(product as TUpdateProduct).id}`;
+}
 ```
 </details>
 
