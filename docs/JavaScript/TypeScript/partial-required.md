@@ -56,3 +56,26 @@ const myBtn: FullButtonProps = {
   disabled: false
 };
 ```
+
+## 實戰常見組合技
+
+> 實戰中，常見將 Pick/Omit 和 Partial 混在一起使用
+
+情境：寫一個『編輯個人資料』的表單
+1. `id` 不能被編輯(用 Omit)
+2. 剩下欄位選填(用 Partial)
+
+```ts
+type TUser = {
+  id: number;
+  name: string;
+  email: string;
+  bio: string;
+}
+
+type TEditProfileDto = Partial<Omit<TUser, 'id'>>;
+
+const formInput: TEditProfileDto = {
+  bio: "Hello World";
+}
+```
