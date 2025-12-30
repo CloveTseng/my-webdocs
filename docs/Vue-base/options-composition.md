@@ -14,14 +14,19 @@ tags: [Vue.js]
 export default {
   data() {
     return {
-      titleClass: 'title'
+      count: 0
+    }
+  },
+  methods: {
+    increment() {
+      this.count++;
     }
   }
 }
 </script>
 
 <template>
-  <h1>Make me red</h1> <!-- add dynamic class binding here -->
+  <button @click="increment">{{ count }}</button>
 </template>
 ```
 
@@ -33,11 +38,15 @@ export default {
 <script setup>
 import { ref } from 'vue'
 
-const titleClass = ref('title')
+const count = ref(0);
+
+const increment = () => {
+  count.value++;
+}
 </script>
 
 <template>
-  <h1>Make me red</h1> <!-- add dynamic class binding here -->
+  <button @click="increment">{{ count }}</button>
 </template>
 ```
 :::note
