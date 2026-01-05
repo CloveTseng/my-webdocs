@@ -28,5 +28,7 @@ tags: [obsidian, github]
   ```
 8. 去 GitHub 倉庫查看，應該可以看到剛剛的筆記已經上傳到 GitHub 倉庫
 9. 在 Obsidian 修改一下筆記，再等一下會看到 git 自動上傳到 GitHub 倉庫的通知
+  <img src="/blog/obsidian-commit.png" width="200"/>
+
 
 
