@@ -6,7 +6,7 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Clove Crafted-dev | 前端工程師',
+  title: 'Clove Crafted-Dev | 說人話的前端工程師',
   tagline: 'F2E Developer',
   favicon: '/img/favicon.ico',
 

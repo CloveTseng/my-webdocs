@@ -5,7 +5,7 @@ authors: [clove]
 tags: [beta, blog, year]
 ---
 
-> 
+> 2025 年結束了 9 個月的培訓
 
 <!-- truncate -->
 
