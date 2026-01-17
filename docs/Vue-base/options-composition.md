@@ -11,6 +11,7 @@ tags: [Vue.js]
 
 ```js
 <script>
+<<<<<<< Updated upstream
 export default {
   data() {
     return {
@@ -23,6 +24,9 @@ export default {
     }
   }
 }
+=======
+  export 
+>>>>>>> Stashed changes
 </script>
 
 <template>

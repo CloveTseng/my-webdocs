@@ -47,6 +47,12 @@ const feedbackData = [
     content: '做事細心，軟體專案交辦給她讓人很放心，遇到工作模糊地帶也會主動協助釐清，讓交付品質變得更完善 👍',
     point: '★★★★★'
   },
+  {
+    img: '/img/avatar/Jerry.webp',
+    from: '工程師 - Gui',
+    content: '與 Clove 一同參與 Discord 社群「十二週目標互助計畫」的幕後工作，看見其具有非常高的行動力，當計畫主持人提出舉辦工作坊的構想，Clove 馬上就與主持人一來一回將當天有什麼可能流程、細節討論完成。Clove 積極的態度、熱情與行動力是團隊不可或缺的重要人物～',
+    point: '★★★★★'
+  },
 ]
 export default function CollSwiper() {
   return (
