@@ -23,17 +23,20 @@ tags: [camp, hexschool]
 受到之前 [後端體驗營](https://clovetseng.dev/blog/2026/2026-backend-camp) 校長開發每日任務 - 海姐的啟發，<br/>
 這次校長加碼鼓勵大家用 Vibe coding 做自己的 Flex 學習小遊戲，我一聽就蠢蠢欲動。
 
-於是我做了一個 -『排版魔女工坊』🧙‍♀️：你是一位魔法學徒，玩家透過調整「咒語」（屬性值）來讓版面的 Flex 魔法成功
+於是我做了一個 -『排版魔女工坊』🧙‍♀️：你是一位魔法學徒，透過調整『 咒語 』(屬性值) 來讓版面的 Flex 魔法成功
 
-玩起來 👉 https://flex-atelier.vercel.app/
+- 玩起來 👉 https://flex-atelier.vercel.app/
+- 開發心得 👉 敬請期待
 
 
 ![進場動畫](../../static/blog/intro-radio.webp)
+(進場動畫)
 
 ![章節地圖](../../static/blog/section-map.webp)
+(章節地圖)
 
 ![第一章第2關](../../static/blog/1-2.webp)
-// 這裡待補一些遊戲畫面
+(關卡畫面)
 
 ---
 
