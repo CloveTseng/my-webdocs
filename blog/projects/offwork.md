@@ -20,12 +20,12 @@ tags: [ side-project ]
 
 ### 主要功能
 
-<img src="/blog/Slide_08.png" />
-<img src="/blog/Slide_09.png" />
+<img src="/blog/Slide_08.webp" />
+<img src="/blog/Slide_09.webp" />
 使用者在首頁可以查看目前爆發指數，並且點擊『下班儀式』選擇要藉由吶喊練習或是平靜呼吸來達到釋放壓力
 
-<img src="/blog/Slide_10.png" />
-<img src="/blog/Slide_11.png" />
+<img src="/blog/Slide_10.webp" />
+<img src="/blog/Slide_11.webp" />
 
 - **吶喊練習**: 使用者的吶喊分貝數會即時反應在畫面上，達到一個視覺化的情緒釋放體驗。
 - **平靜呼吸**: 提供引導式的呼吸練習，幫助使用者在壓力事件後恢復平靜。
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
 ### 分析頁面與流程
    我負責分析頁面以及相關的流程開發，並且使用 **GSAP** 來處理載入時圖表的動畫，以及部份使用 **ECharts** 開發圖表。
 
-<img src="/blog/Slide_12.png" />
+<img src="/blog/Slide_12.webp" />
 
 ### 使用技術：
 - Vue3 (Composition API)
@@ -111,7 +111,7 @@ export default defineNuxtConfig({
 
 在開發分析頁面時，因為有大量圖表需要處理，我先查找了 StackOverflow 技術論壇上面相關的討論，再去比較幾個較多人在使用的 Chart.js、D3.js、ECharts 工具或是直接使用 `<canvas>` 來繪製。
 
-<img src="/blog/Slide_13.png" />
+<img src="/blog/Slide_13.webp" />
 
 考量到這次專案以靜態呈現為主，沒有數據可以產出圖表，並且也不想要太複雜化，所以最終只有『大吼時段』的日、週、月、年切換的熱力圖 + 日期圖表是使用 ECharts 來處理；而其他的圖表比較單純、重複利用性也較低，就直接用 `<canvas>` 搭配 `Gemini` 來繪製。
 
@@ -119,7 +119,7 @@ export default defineNuxtConfig({
 
 與設計師的溝通協調過程讓我印象深刻。在開發圓環圖表時，一開始的想法是先畫個圓型然後再切半來顯示，但在調整圓環和內文字的間距的時候發現設計師的 UI 並不是正圓型的。
 
-<img src="/blog/Slide_14.png" />
+<img src="/blog/Slide_14.webp" />
 
 試著調整幾次後跟設計師進行畫面上的非同步討論，在互相討論各自想法與開發的可行性後決定調整設計稿，並且開發的部份把圓再加大呈現來達到畫面的平衡。這個過程讓我學到設計師與工程師考量的面向不相同，技術語言上也不相同，要如何在之間找到平衡點是一大課題。
 
@@ -131,7 +131,7 @@ export default defineNuxtConfig({
 - Meta Tags 的撰寫 (SEO 的重要性)
 - 網站效能注重 (使用 Google PageSpeed 檢測)
 
-<img src="/blog/highlight-3.png" />
+<img src="/blog/highlight-3.webp" />
 
 在這個專案除了增加了 Nuxt.js (Vue3) 的實戰開發經驗，也增加了不少直接跟設計師的溝通經驗。
 

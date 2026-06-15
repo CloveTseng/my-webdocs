@@ -15,9 +15,9 @@ tags: [camp, hexschool]
 只要你努力，會看得見回報!!!
 
 這次校長還直接 vibe 了一個每日任務小遊戲，讓你從第一天入職來體驗什麼是後端工程師
-![livefit](../../static/blog/BE-livefit.png)\
+![livefit](../../static/blog/BE-livefit.webp)\
 裡面還包含了互動式簡報，邊玩邊學習，覺得比以往的每日還要更容易理解
-![livefit](../../static/blog/BE-livefit3.png)
+![livefit](../../static/blog/BE-livefit3.webp)
 
 ---
 
@@ -30,7 +30,7 @@ tags: [camp, hexschool]
 
 所以比起完美結局，我更喜歡普通結局，字裡行間救贖了我的完美主義，
 > 我只是還在努力學著告訴自己，我已經很棒了！
-![livefit](../../static/blog/BE-livefit2.png)
+![livefit](../../static/blog/BE-livefit2.webp)
 
 這不是我第一次參加的體驗營，但卻是影響我最深的一次體驗營！
 

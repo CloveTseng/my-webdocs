@@ -27,13 +27,13 @@ tags: [ side-project ]
 ---
 
 ## 主要功能介紹
-<img src="/blog/Slide_08.png" />
-<img src="/blog/Slide_09.png" />
+<img src="/blog/Slide_08.webp" />
+<img src="/blog/Slide_09.webp" />
 使用者在首頁可以查看目前爆發指數，並且點擊『下班儀式』選擇要藉由吶喊練習或是平靜呼吸來達到釋放壓力
 
 
-<img src="/blog/Slide_10.png" />
-<img src="/blog/Slide_11.png" />
+<img src="/blog/Slide_10.webp" />
+<img src="/blog/Slide_11.webp" />
 
 - 吶喊練習: 使用者的吶喊分貝數會即時反應在畫面上，達到一個視覺化的情緒釋放體驗。
 - 平靜呼吸: 提供引導式的呼吸練習，幫助使用者在壓力事件後恢復平靜。
@@ -63,7 +63,7 @@ tags: [ side-project ]
 ## 困難與解決
 
 ### 1. 分析頁面有大量圖表，要怎麼處理？
-<img src="/blog/Slide_13.png" />
+<img src="/blog/Slide_13.webp" />
 因為我們主要使用 Vue3 來開發，所以我先查找了 stack overflow 技術論壇上面相關的討論。再去比較幾個較多人在使用的 Chart.js、D3.js、ECharts 工具或是直接使用 `<canvas>` 來繪製。
 
 考量到這次專案以靜態呈現為主，沒有數據可以產出圖表，並且也不想要太複雜化，
@@ -73,7 +73,7 @@ tags: [ side-project ]
 而其他的圖表比較單純、重複利用性也較低，就直接用 `<canvas>` 搭配 `Gemini` 來繪製。
 
 ### 2. 與設計師 QA 溝通與協調：圓環與設計稿不一樣
-<img src="/blog/Slide_14.png" />
+<img src="/blog/Slide_14.webp" />
 一開始開發時的想法是先畫個圓型然後再切半來顯示，\
 在調整圓環和內文字的間距的時候發現設計師的 UI 並不是正圓型的，\
 試著調整幾次後跟設計師進行畫面上的非同步討論，\
@@ -86,7 +86,7 @@ tags: [ side-project ]
 - 包含元件與資料流向要怎麼拆的漂亮
 - Meta Tags 的撰寫 (SEO 的重要性)
 - 網站效能注重 (使用 Google PageSpeed 檢測)
-<img src="/blog/highlight-3.png" />
+<img src="/blog/highlight-3.webp" />
 
 ---
 

@@ -2,7 +2,7 @@
 title: Day 4 - 陣列與物件
 description: 2025 TypeScript 實戰課，一天學一點積沙成塔
 tags: [Vue.js, JavaScript]
-image: /blog/ts-daily4.png
+image: /blog/ts-daily4.webp
 ---
 
 > 2025 TypeScript 實戰課，一天學一點積沙成塔

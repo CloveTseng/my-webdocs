@@ -143,7 +143,7 @@ code {
   font-weight: 400;
 }
 .img_ev3q {
-  width: 300px;
+  max-width: 100%;
 }
 
 pre {

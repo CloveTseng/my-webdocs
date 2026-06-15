@@ -11,7 +11,7 @@ tags: [obsidian, github]
 
 # 將 Obsidian 筆記庫連接至 GitHub
 1. 開啟 Obsidian 建立一個新的庫
-  <img src="/blog/obsidian-new-vault.png" width="400"/>
+  <img src="/blog/obsidian-new-vault.webp" width="400"/>
 2. 新增一個新筆記，並輸入一些內容
 3. 安裝 git 插件：開啟後可以設定定期上傳到 GitHub 的時間間隔、commit message 等設定
   > 記得開啟 `Pull on startup` 選項，這樣每次開啟 Obsidian 時都會自動 pull 最新的筆記庫
@@ -28,7 +28,7 @@ tags: [obsidian, github]
   ```
 8. 去 GitHub 倉庫查看，應該可以看到剛剛的筆記已經上傳到 GitHub 倉庫
 9. 在 Obsidian 修改一下筆記，再等一下會看到 git 自動上傳到 GitHub 倉庫的通知
-  <img src="/blog/obsidian-commit.png" width="200"/>
+  <img src="/blog/obsidian-commit.webp" width="200"/>
 
 
 

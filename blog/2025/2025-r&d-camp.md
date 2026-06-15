@@ -51,4 +51,4 @@ tags: [camp, hexschool]
 ## 給想入坑的新同學一些勉勵的話
 
 抖下去吧同學們!! 明年還會看到學姐的~
-![grandmother](../../static/blog/grandmother.png)
+![grandmother](../../static/blog/grandmother.webp)

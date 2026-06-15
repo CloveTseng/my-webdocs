@@ -23,7 +23,7 @@ const person1 = new Person("Clove", "Tseng");
 console.log(person1)
 ```
 
-<img src="/blog/prototype1.png" />
+<img src="/blog/prototype1.webp" />
 在 DevTools 看到除了 firstName 跟 lastName 的值之外，可以看到下面還有一個 prototype chain 的物件，裡面就會包含寫入的 gender: "Male"
 
 ```js

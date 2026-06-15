@@ -2,7 +2,7 @@
 title: Day 3 - 函式
 description: 2025 TypeScript 實戰課，一天學一點積沙成塔
 tags: [Vue.js, JavaScript]
-image: /blog/ts-daily3.png
+image: /blog/ts-daily3.webp
 ---
 
 > 2025 TypeScript 實戰課，一天學一點積沙成塔

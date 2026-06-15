@@ -51,13 +51,13 @@ tags: [camp, hexschool]
 
 ## 最喜歡新手營的哪些活動？
 必須要是[每日任務](https://clovetseng.dev/docs/vue-daily/v-text)的吧!
-![每日任務](../../static/blog/vue-daily.png)
+![每日任務](../../static/blog/vue-daily.webp)
 
 看著自己一步一步的成長，一次只要一點點累積成一個強大的自己！\
 回頭看也會為自己感到驕傲
 
 這次還有校長加碼的『你寫作業，就問到飽』活動
-![bonus](../../static/blog/bonus.png)\
+![bonus](../../static/blog/bonus.webp)\
 也聽了很多在職、待轉職各方各面大家的煩惱，其中也會找到一些跟自己相關的議題可以反思，這個是在外面或是其他影音課沒辦法獲得的
 
 ---
@@ -74,4 +74,4 @@ tags: [camp, hexschool]
 ## 給想入坑的新同學一些勉勵的話
 
 抖下去吧同學們!! 明年還會看到學姐的~
-![grandmother](../../static/blog/grandmother.png)
+![grandmother](../../static/blog/grandmother.webp)

@@ -2,7 +2,7 @@
 title: Day 1 - TypeScript 簡介
 description: 2025 TypeScript 實戰課，一天學一點積沙成塔
 tags: [Vue.js, JavaScript]
-image: /blog/ts-daily1.png
+image: /blog/ts-daily1.webp
 ---
 
 > 2025 TypeScript 實戰課，一天學一點積沙成塔
@@ -52,7 +52,7 @@ image: /blog/ts-daily1.png
 ### 步驟一：安裝 VSCode 編輯器
 ### 步驟二：安裝 Node.js
 ### 步驟三：透過 Vite 初始化 TypeScript 專案
-![ts-daily1](/blog/ts-daily1.png)
+![ts-daily1](/blog/ts-daily1.webp)
 
 ## 思考與反饋
 - 開始學習各種定義型別的方式
